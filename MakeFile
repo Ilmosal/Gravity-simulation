@@ -4,4 +4,4 @@ all:
         gfortran -c runge_kutta.f95
         gfortran -c inputFileReader.f95
         gfortran -c main.f95
-        gfortran -o run_verlet.out main.o object.o verlet_integrator.o inputFileReader.o
+        gfortran -o run_verlet.out main.o object.o verlet_integrator.o runge_kutta.o inputFileReader.o

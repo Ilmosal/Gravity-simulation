@@ -9,7 +9,7 @@ program main
   real :: timescale
   type(object_space), allocatable :: list(:)
 
-  filename = "../run/input.dat"
+  filename = "input.dat"
 
   error = readStats(filename, outputName, numberofObjects, timescale, steps, everyNth)
 

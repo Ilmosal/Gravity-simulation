@@ -6,7 +6,7 @@ program main
   implicit none
 
   character(100) :: filename, outputName
-  integer :: numberofObjects, steps, everyNth, error, sim_type
+  integer :: numberofObjects, steps, everyNth, error, sim_type = 2
   real :: timescale
   type(object_space), allocatable :: list(:)
 

@@ -39,7 +39,6 @@ contains
       do i = 1, siz
         call total_acceleration(i, siz, list)
       end do
-
       !Fourth step for all objects
       do i = 1, siz
         call verlet_integration_fourth(i, siz, list, timescale)
@@ -58,7 +57,6 @@ contains
     close(unit=1, status='keep')
 
   end subroutine
-
 
 !Subroutine for one iteration of verlet_integration for one object the first phase. siz is the amount of objects in list
   subroutine verlet_integration_first(object, siz, list, timescale)
@@ -88,7 +86,6 @@ contains
     end do
 
   end subroutine
-
 !the fourth phase of verlet integration. Calculating the final velocity for the next phase
   subroutine verlet_integration_fourth(object, siz, list, timescale)
     implicit none
